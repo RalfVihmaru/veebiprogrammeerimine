@@ -10,7 +10,7 @@
 	$partOfDay = "varane hommik";
 	}
 	{
-  if($hourNow > 9) 
+  if($hourNow <= 8) 
     $partofDay2 = "kooli aeg";
     }
 	{
@@ -18,7 +18,7 @@
     $partofDay3 = "veebiprogemine";
 	}
 	{
-  if($hourNow <= 6 ) 
+  if($hourNow <= 7 ) 
     $partofDay4 = "pime";
 	}
 ?>
@@ -58,7 +58,7 @@
 	".</p>";
    ?>
    <?php
-    echo "<p>Lehe avamisel on " .$partofDay4 . 
+    echo "<p>Lehe avamisel on õues " .$partofDay4 . 
 	".</p>";
    ?>
   <hr>
