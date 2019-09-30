@@ -2,14 +2,20 @@
   $userName = "Ralf Vihmaru";
   $photoDir = "../photos/";
   $picFileTypes = ["image/jpeg", "image/png"];
-  $fullTimeNow = date("l.F.Y H:i:s");  
+  $weekdayNamesET = ["esmaspäev", "teisipäev", "kolmapäev", "neljapäev", "reede", "laupäev", "pühapäev"];
+  $monthNamesET = ["jaanuar", "veebruar", "märts", "aprill", "mai", "Juuni", "juuli", "august", "september", "oktoober", "november", "detsember"];
+  $weekdayNow = date("N");
+  $dateNow = date("d");
+  $monthNow = date("m");
+  $yearNow = date("Y");
+  $timeNow = date("H:i:s");
+  $hourNow = date("H");
+  $fullTimeNow = date("d.m.Y H:i:s");  
   $hourNow = date("H");
   $partOfDay = "hägune aeg";
   $partofDay2 = "vaba aeg";
   $partofDay3 = "mingi muu tund";
   $partofDay4 = "valge ";
-  $weekDaysET = ["esmaspäev", "teisipäev", "kolmapäev", "neljapäev", "reede", "laupäev", "pühapäev"];
-  $monthsET = ["jaanuar", "veebruar", "märts", "aprill", "mai", "Juuni", "juuli", "august", "september", "oktoober", "november", "detsember"];
   if($hourNow < 8) {
 	$partOfDay = "varane hommik";
 	}
